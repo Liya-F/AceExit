@@ -18,7 +18,7 @@ section{
 
 
 .homesection{
-    height: 85vh;
+    height: 75vh;
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1462536943532-57a629f6cc60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80');
     background-size: cover;
     background-position: center;
@@ -36,18 +36,19 @@ a:hover{
 }
 
 .homesection .navbar{
-   position: fixed;
     width: 100%;
-    height: 100px;
+    height: 90px;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    padding: 40px 100px;
+    padding: 40px 80px;
     justify-content: space-between;
     text-align: center;
-    background-color: rgb(44, 44, 44);
-    border-bottom-right-radius: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
    
 }
 .homesection .navbar .logo {
@@ -57,9 +58,11 @@ a:hover{
     color: white;
     letter-spacing: 2px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 100px;
     
     
 }
+
 .homesection .navbar .logo .logo_span{
     color: #07e4ce;
     
@@ -67,10 +70,11 @@ a:hover{
 .homesection .navbar .links{
     display: flex;
     gap: 3rem;
+    margin-right: 100px;
 
 }
 .homesection .navbar .links a{
-    font-size: 1rem;
+    font-size: 0.9rem;
     letter-spacing: 1.5px;
 }
 
@@ -81,19 +85,20 @@ a:hover{
     display: none;
 }
 .action_btn{
-    background-color: #07e4ce;
+    background-color: black;
     color: white;
-    padding: 0.6rem 1rem;
-    border: none;
+    padding: 0.2rem 1rem;
+    border: 1px solid #07e4ce;
     outline: none;
-    border-radius: 20px;
+    border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
     transition: scale 0.2 ease;
+    margin-left: 5px;
 }
 .action_btn:hover{
     scale: 1.05;
-    color: black;
+    color: lightgray;
 }
 .action_btn:active{
     scale: 0.95;
@@ -116,6 +121,7 @@ a:hover{
     height: auto;
 }
 .dropdown_menu li{
+    margin-top: 5px;
     padding: 0.3rem;
     list-style: none;
     display: flex;
@@ -168,7 +174,7 @@ i{
 }
 .welcome h1{
     font-size: 4.5rem;
-    margin-top: 5%;
+    margin-top: 0%;
 }
 .welcome p{
     margin: 20px auto;
@@ -191,6 +197,12 @@ i{
     color: black;
     scale: 1.05;
 }
+.programs{
+   
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .courses, .services{
     height: auto;
     background-size: cover;
@@ -208,9 +220,6 @@ section h1{
     font-size: 2rem;
     font-weight: 600;
     position: relative;
-}
-section{
-
 }
 .courses span, .services span{
     color:#07e4ce;

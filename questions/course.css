@@ -1,0 +1,85 @@
+nav ul{
+    gap: 1rem;
+}
+.nav-link{
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;   
+}
+.nav-link:hover{
+    color:lightgray;
+    cursor: pointer;
+    border-bottom: 5px groove lightgray;
+}
+
+i{
+    color: white;
+}
+.navbar-brand{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding-right: 10px;
+
+}
+.selected{
+   color: #07e4ce;
+   border-bottom: 5px groove #07e4ce;
+
+
+}
+.container{
+    border-radius: 20px;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px 2px lightgray;
+    background-color: rgb(250, 250, 250);
+}
+.container h5{
+    margin: 20px;
+    
+}
+.container h3{
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid #07e4ce;
+    padding-bottom: 3px;
+}
+.timeline{
+    border-left: 2px solid lightgray;
+    margin-left: 40px;
+}
+.timeline a{
+    display:block;
+    padding: 5px 40px;
+    font-size: 15px;
+    text-decoration: none;
+    width: 200px;
+    position: relative;
+    height: 50px;
+    color: gray;
+
+}
+.timeline a:hover{
+    color: black;
+}
+.timeline a:before{
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid #07e4ce;
+    position: absolute;
+    top: 10px;
+    left: -8px;
+}
+.timeline a:hover::before{
+    background-color: rgb(30, 141, 141);
+    scale: 1.25;
+}
+
+
+

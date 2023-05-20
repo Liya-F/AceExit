@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="box">
+    <div class="container">
+ <div class="top-header">
+    <header>Login</header>
+ </div> 
+<form action="../includes/logininc.php" method="post">
+ <div class="input-field">
+    <input type="text" name="uname" class="input" placeholder= "Username/Email" maxlength="50">
+    <i class="fa-solid fa-user"></i>
+ </div> 
+ <div class="input-field">
+    <input type="password" name="password" class="input" placeholder= "Password">
+    <i class="fa-solid fa-lock"></i>
+ </div> 
+ <div class="input-field">
+    <input type="submit" name="submit" class="submit" value="Login">
+</div> 
+
+</form>
+ <div class="bottom">
+    <div class="right">
+        <a href="#" class="forgot"><i>Forgot Username/Password?</i></h5></a> 
+    </div>
+    <div class="left">
+        <h5>Don't have an account?</h5><a href="signUp.php" class="bottom">SIGN UP NOW</a><br><br><a href="../index.php" style="color:#07e4ce">Home</a>
+    </div>
+     
+ </div> 
+ 
+    </div>
+    </div>
+
+</body>
+</html>

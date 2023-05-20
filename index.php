@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,20 +15,42 @@
 </head>
 <body>
     <header>
+        <style>
+            .username{
+                background-color: white;
+                color: black;
+                border: 2px solid #07e4ce;
+            }
+        </style>
 
 <!--Navigation bar for large screen size-->
 <div class="homesection">
 
-        <div class="navbar">
+        <div class="navbar fixed-top">
             <div class="logo">Ace<span class="logo_span">Exit</span></div>
             <ul class="links" type="none">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#courses">Courses</a></li>
+                <li><a href="#courses">Programs</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#aboutus">About</a></li>
                 <li><a href="#contactus">Contact</a></li>
             </ul>
-                <a href="#" class="action_btn"><i class="fa-solid fa-user"></i></a>
+          <?php
+            if(isset($_SESSION["userid"])){
+
+            ?>
+                
+                <a href="Login/signUp.html" class="action_btn username"><?php echo $_SESSION["username"]?></a>
+                <a href="includes/logoutinc.php" class="action_btn">Log out</i></a>
+            
+            <?php
+            }else{
+            ?>
+                <a href="Login/signUp.php" class="action_btn">Sign up</a>
+                <a href="Login/logindex.html" class="action_btn">Log in</i></a>
+            <?php
+            }
+            ?>
                 <div class="toggle_btn">
                     <i class="fa-solid fa-bars"></i>
                 </div>
@@ -35,11 +60,12 @@
 
     <div class="dropdown_menu">
         <li><a href="#home">Home</a></li>
-        <li><a href="#courses">Courses</a></li>
+        <li><a href="#courses">Programs</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#aboutus">About</a></li>
         <li><a href="#contactus">Contact</a></li>
-        <li><a href="#" class="action_btn"><i class="fa-solid fa-user"></i></a></li>
+        <li><a href="Login/signUp.html" class="action_btn">Sign up</i></a></li>
+        <li><a href="Login/logindex.html" class="action_btn">Log in</a></li>
     </div>
 
     </header>
@@ -54,9 +80,10 @@
 </div>
 
 <!--Our Courses Section-->
+<div class="containerfluid programs">
 
     <section class="courses" id="courses">
-        <h1 id="courses">Our <span>Courses</span></h1>
+        <h1 id="courses">Our <span>Programs</span></h1>
 
         <div class="box">
 
@@ -105,6 +132,7 @@
         </div>   
 </div>
     </section>
+</div>
 
     <!--Our Services Section-->
 
@@ -192,6 +220,8 @@
 
 <!--Contact Us section-->
 
+
+
         <section class="contactus" id="contactus">
             <h1 id="contactus">Contact <span>Us</span></h1>
             <div class="box">
@@ -207,7 +237,7 @@
                     <div class="row">
                         <div class="col-lg-4"></div>
                         <div class="col-lg-1"><a href="#home">Home</a></div>
-                        <div class="col-lg-1"><a href="#courses">Courses</a></div>
+                        <div class="col-lg-1"><a href="#courses">Programs</a></div>
                         <div class="col-lg-1"><a href="#services">Services</a></div>
                         <div class="col-lg-1"><a href="#aboutus">About Us</a></div>
                         <div class="col-lg-4"></div>
