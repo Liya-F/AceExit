@@ -1,0 +1,90 @@
+*
+{
+margin: 0;
+padding: 0;
+font-family: 'Roboto', sans-serif;
+}
+body
+{
+background: white;
+}
+
+.container .search
+{
+display: flex;
+padding: 20px 0px;
+justify-content: space-between;
+margin-top: 50px;
+}
+.container .search h1
+{
+letter-spacing: 3px;
+display: inline-block;
+border-bottom: 2px solid #07e4ce;
+padding-bottom: 10px;
+}
+.container .search input
+{
+width: 50%;
+padding: 2px 16px;
+background: transparent;
+border: 1px solid #000;
+font-size: 18px;
+text-transform: capitalize;
+letter-spacing: 3px;
+outline: none;
+border-radius: 25px;
+}
+.container .search input::placeholder
+{
+color: gray;
+font-weight: 500;
+}
+.container .course-list
+{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+text-align: center;
+grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+}
+.container .course-list .course
+{
+margin-top: 30px;
+width: 280px;
+height: 300px;
+
+}
+
+.container .course-list .course:hover{
+    border: 1px solid #07e4ce;
+    
+}
+
+
+.container .course-list .course h3
+{
+padding-top: 5px;
+letter-spacing: 2px;
+font-size: 15px;
+font-weight: 700;
+text-align: center;
+text-decoration: none;
+font-size: large;
+color: black;
+
+}
+
+.container .course-list .course h4
+{
+padding: 3px 0px;
+color: #07e4ce;
+font-weight: 700;
+letter-spacing: 3px;
+text-decoration: none;
+}
+img{
+    width: 230px;
+    height: 230px;
+    text-align: center;
+}

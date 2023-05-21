@@ -93,13 +93,17 @@ session_start();
                 <img src="images/img1.jpg" alt="">
                 <h3>Accounting and Finance</h3>
             </div>
-        </div>   
-            <div class="col-lg-4">
+        </div>  
+       
+        <div class="col-lg-4">
+        <a href="questions/courselist.html">
                 <div class="container">
                 <img src="images/img3.jpg" alt="">
-                <h3>Computer Science</h3>
-                
+                <h3 style="color:black">Computer Science</h3>
+        </a>
             </div>
+        
+            
         </div>
             <div class="col-lg-4">
                 <div class="container">

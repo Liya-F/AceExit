@@ -63,6 +63,7 @@ const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 const explanationdiv = document.getElementById("explanation");
 const nextQuiz = document.getElementById("next-quiz");
+const outof = document.getElementById("outof");
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -80,6 +81,7 @@ function showQuestion(){
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question; 
+    outof.innerHTML = questionNo + " out of " + questions.length;
 
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");

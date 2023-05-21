@@ -10,3 +10,13 @@ const toggleBtn = document.querySelector('.toggle_btn')
             ? 'fa-solid fa-xmark'
             : 'fa-solid fa-bars'
         }
+
+
+var urlMenu = document.getElementById("program");
+urlMenu.onchange = function(){
+    var useroption = this.option[this.selectedIndex];
+    if(useroption.value != "nothing"){
+        window.open(useroption.value,"Acounting and Finance Computer Science Management Marketing Management Tourism");
+
+    }
+}        
