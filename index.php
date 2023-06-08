@@ -39,9 +39,10 @@ session_start();
             if(isset($_SESSION["userid"])){
 
             ?>
+
+                <a href="includes/logoutinc.php" class="action_btn">Log out</a>
+                <button class="action_btn username"><?php echo $_SESSION["username"]?></button>
                 
-                <a href="Login/signUp.html" class="action_btn username"><?php echo $_SESSION["username"]?></a>
-                <a href="includes/logoutinc.php" class="action_btn">Log out</i></a>
             
             <?php
             }else{

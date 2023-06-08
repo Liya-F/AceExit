@@ -139,7 +139,7 @@ a:hover{
 
 }
 
-@media(max-width: 873px){
+@media(max-width: 930px){
     .homesection .navbar .links,
     .homesection .navbar .action_btn{
         display: none;

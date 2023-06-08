@@ -32,6 +32,7 @@ body{
     color: black;
     font-weight: 600;
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 button{
     background: white;
@@ -68,6 +69,7 @@ button:hover:not([disabled]){
     display: none;
     
 }
+
 .button:disabled{
     cursor: no-drop;
 }
@@ -100,5 +102,16 @@ button:hover:not([disabled]){
     cursor: pointer;
     display: block;
     display: none;
+    text-align: center;
 
+}
+.timer-div{
+    background-color: #07e4ce;
+    width: 7.5rem;
+    border-radius: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7em 1.8em;
+    float: right;
 }

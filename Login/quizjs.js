@@ -1,25 +1,25 @@
 const questions = [
     {
-        question: "Which one of the followig affect the running time of an algorithm?",
+        question: "Aprior algorithm analysis doesn't include - ",
         answers: [
-            {text:"Processor speed", correct:false},
-            {text:"Programming language", correct:false},
-            {text:"Compiler", correct:false},
-            {text:"All", correct:true},
+            {text:"Time Complexity", correct:false},
+            {text:"Space Complexity", correct:false},
+            {text:"Program Complexity", correct:true},
+            {text:"None", correct:false},
             
         ],
-        explanation: "Answer D : Running time of an algorithm is affected with Processor speed, Programming language used and the compiler."
+        explanation: "Answer C : Algorithms are independent of programming language, hence, program complexity is not a part of algorithm analysis."
     },
     {
-        question: "Which one of the followig affect the running time of an algorithm?",
+        question: "Which of the following data structure is linear type?",
         answers: [
-            {text:"Processor speed", correct:false},
-            {text:"Programming language", correct:false},
-            {text:"Compiler", correct:false},
+            {text:"Strings", correct:false},
+            {text:"Lists", correct:false},
+            {text:"Queues", correct:false},
             {text:"All", correct:true},
             
         ],
-        explanation: "Answer D : Running time of an algorithm is affected with Processor speed, Programming language used and the compiler." 
+        explanation: "Answer D : Strings, Lists and Queues are all linear data structures. A linear data structure is one where data items are arranged in a linear fashion.   ." 
     },
     {
         question: "Which one of the followig affect the running time of an algorithm?",
@@ -33,12 +33,12 @@ const questions = [
 
     },
     {
-        question: "Which one of the followig affect the running time of an algorithm?",
+        question: "An array is what kind of data structure?",
         answers: [
-            {text:"Processor speed", correct:false},
-            {text:"Programming language", correct:false},
-            {text:"Compiler", correct:false},
-            {text:"All", correct:true},
+            {text:"Linear", correct:false},
+            {text:"Non-Linear", correct:false},
+            {text:"Complex", correct:false},
+            {text:"None", correct:true},
             
         ],
         explanation: "Answer D : Running time of an algorithm is affected with Processor speed, Programming language used and the compiler."
@@ -67,6 +67,7 @@ const outof = document.getElementById("outof");
 
 let currentQuestionIndex = 0;
 let score = 0;
+
 
 function startQuiz(){
     currentQuestionIndex = 0;
